@@ -77,7 +77,7 @@ export default class Alpr {
       const responseData = {};
 
       responseData.statusCode = Number.isInteger(data.statusCode) ? data.statusCode : 200;
-      responseData.headers = typeof data.headers === 'object' ? data.headers : {};
+      responseData.headers = typeof data.headers === 'object' ? data.headers : {'Access-Control-Allow-Origin': '*'};
       if (data.isBase64Encoded) {
         responseData.body = data.body || '';
         responseData.isBase64Encoded = true;
