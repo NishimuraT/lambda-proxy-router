@@ -2,7 +2,7 @@
   "name": "alpr",
   "version": "0.2.2",
   "description": "A hapi inspired router for AWS Lambda proxy functions",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
     "test": "npm run-script lint && nyc ava test && nyc report --reporter=text-lcov | coveralls",
     "lint": "eslint src/*.js test/*.js",
